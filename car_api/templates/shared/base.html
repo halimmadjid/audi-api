@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="../../static/css/styles.css">
+<title>Car Collection API
+</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!--navbar-->
+        <nav class="main-nav">
+            <!--logo image-->
+            <a href="{{ url_for('home') }}">
+                <img src="../../static/images/car_logo.jpeg" alt="Car Logo">
+            </a>
+            <!--nav links-->
+            <ul class="nav-links">
+                <li>
+                    <a href="">Our API</a>
+                </li>
+                <li>
+                    <a href="">Our Audis</a>
+                </li>
+                <li>
+                    <a href="">Your Audi Crew</a>
+                </li>
+                
+                {% if current_user.is_authenticated %}
+                <li>
+                    <a href="{{ url_for('audi')}}">Audi</a>
+                </li>
+                <li>
+                <a href="{{ url_for('logout')}}">Log Out</a>
+                </li>
+                {% else %}
+                <li>
+                    <a href="{{ url_for('signin') }}">Log In</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('signup') }}">Sign Up!</a>
+                </li>
+                {% endif %}
+            </ul>   
+            <!--end nav links-->
+        </nav>
+        <!--end navbar-->
+        
+        {% block content %}
+
+        {% endblock content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+    </div>
+</body>
+</html>

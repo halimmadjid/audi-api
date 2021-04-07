@@ -1,0 +1,5 @@
+CLIENT ID
+AIzaSyD6xZp7j8NGvihvBq7UACAl-71_6M2xL54.apps.googleusercontent.com
+
+Client secret
+AIzaSyD6xZp7j8NGvihvBq7UACAl-71_6M2xL54

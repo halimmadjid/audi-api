@@ -1,0 +1,103 @@
+/*navbar*/
+.main-nav{
+    display:flex;
+    justify-content: space-around;
+}
+.main-nav img{   
+    width:25%;
+    max-width: 50%;
+    margin-left: 2vw;
+}
+.nav-links{
+    padding-top:5vh; 
+    list-style: none;
+    min-width: 50vw;
+    display:flex;
+    justify-content:flex-end;
+}
+.nav-links li, .nav-links a{
+    display:inline;
+    text-decoration: none;
+    color:blue;
+    padding:.5vw;
+}
+.nav-links li:nth-last-child(1){
+    border:blue solid 2px
+}
+
+/*Audi Banner Image and text*/
+.audi-banner{
+    background-image:url(../images/audi_snow.jpeg);
+    background-size:cover;
+    height:90vh;
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    text-shadow: -1px -1px 0 blue, 1px -1px 0 blue, -1px 1px 0 blue, 1px 1px 0 blue;
+    font-size:20vh;
+}
+/*End Banner*/
+
+/*Under Banner Section*/
+#api-information{
+    margin:7vh 0;
+    justify-content: center;
+    text-align: center;
+}
+
+/*button section*/
+.button-image{
+    width:20%;
+}
+#button-section{
+    justify-content: space-around;
+    padding:2vh;
+}
+#button-section h4{
+    text-align:center;
+}
+
+#button-section img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#button-section button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Footer Styling*/
+#footer{
+    justify-content: space-around;
+    border-top: solid blue 5px;
+}
+.footer-logo{
+    width:50%;
+    max-width: 100%;
+}
+
+/* Audi Page */
+
+.hero-section{
+    height:95vh;
+    background-image: url(../images/audi_snow.jpeg);
+    background-size: cover;
+    background-position:35% 50%;
+    position: relative;
+}
+
+.header-text{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    color:white;
+    text-shadow: -1px -1px 0 blue, 1px -1px 0 blue, -1px 1px 0 blue, 1px 1px 0 blue;
+    font-size:15vh;
+}
